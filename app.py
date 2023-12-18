@@ -55,5 +55,5 @@ def get_link():
         return jsonify({"error": "Missing id parameter"}), 400
     
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=443, debug=True)
+    app.run(host='0.0.0.0', debug=True)
 
