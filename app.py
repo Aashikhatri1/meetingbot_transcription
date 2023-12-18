@@ -49,9 +49,7 @@ def get_link():
         return jsonify({"link": link}), 200
     else:
         return jsonify({"error": "Missing id parameter"}), 400
-
+    
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=10000, debug=True)
 
-if __name__ == '__main__':
-    app.run(debug=True)
