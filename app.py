@@ -9,6 +9,10 @@ client = MongoClient("mongodb+srv://admin:admin@mygitdb.v0gnkoy.mongodb.net")
 db = client.Meeting_automation
 collection = db.user_data
 
+@app.route('/')
+def home():
+    return "Welcome to my Flask app"
+    
 @app.route('/save_user_info', methods=['POST'])
 def save_user_info():
     # Extracting data from request
